@@ -4,8 +4,8 @@ A modern, high-performance URL shortener built with **FastAPI** and **Python**. 
 
 **Designed & Developed by Ganesh**
 
-![URL Shortener UI](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80)
-*(Note: Replace with an actual screenshot of your app)*
+![URL Shortener UI](./app/assets/Ganesh-s-Link-Shortener.png)
+
 
 ## ✨ Features
 
