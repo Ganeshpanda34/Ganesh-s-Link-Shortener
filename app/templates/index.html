@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh's Link Shortener </title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Shorten Your Link</h1>
+            <p class="subtitle">Paste your long URL below and get a short one instantly.</p>
+            
+            <form id="shorten-form">
+                <div class="input-group">
+                    <input type="url" id="url-input" name="url" placeholder="https://example.com/very-long-url..." required>
+                    <button type="submit" id="shorten-btn">
+                        <span class="btn-text">Shorten</span>
+                        <div class="loader"></div>
+                    </button>
+                </div>
+            </form>
+
+            <div id="result-container" class="hidden">
+                <p>Your shortened URL:</p>
+                <div class="result-box">
+                    <a href="#" id="short-url" target="_blank"></a>
+                    <div class="action-buttons">
+                        <button id="download-btn" class="icon-btn hidden" title="Download Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                        <button id="copy-btn" class="icon-btn" title="Copy to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Designed & Developed by <span class="owner-name">Ganesh</span></p>
+        </div>
+        
+        <div class="background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
